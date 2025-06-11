@@ -1,4 +1,4 @@
-# Querying LLMs Via R
+# Querying LLMs Via R: A Guide for Researchers
 
 # Introduction
 
@@ -19,8 +19,6 @@ This handbook provides a step-by-step guide for researchers aiming to leverage t
 **Note.** API Keys are unique and must not be shared with others. They must be secured safely and never deployed on client-side environments. If the researcher is using LLMs to debug code, be sure of hiding the API Key before sharing it online. This is because it may be against the Terms of Use to share API Keys. For best practices to keep your API Key secure, read OpenAI's page [here](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety).
 
 **4. Internet Access:** Querying LLMs requires making HTTP requests to external APIs. Hence, a stable internet connection is necessary for this purpose.
-
-\newpage
 
 # 1. Using `httr` with `jsonlite`
 
@@ -351,7 +349,7 @@ The `ellmer` R package can be downloaded from CRAN with:
 install.packages("ellmer")
 ```
 
-## List of Providers {#ellmerlist}
+## List of Providers
 
 A wide variety of LLM providers are supported via `ellmer`. Depending on the model, the setup is slightly different. For example, the OpenAI model requires you to obtain an API Key.
 
@@ -425,7 +423,7 @@ my_function()
 
 The `quanteda.llm` package aims to simplify querying LLMs with data prepared with the `quanteda` R package, i.e. quanteda.corpora (or data frames). While still in its development stage, the `quanteda.llm` package allows the researcher to link the data to LLMs for analysing or classifying texts by creating new variables for what is created by the LLMs. In addition, it uses a tidy approach with the new `quanteda.tidy` package which enables convenient operations with common Tidyverse functions to manipulate LLM-created objects and variables.
 
-The `quanteda.llm` package is compatible with all LLMs supported by the [`ellmer`](#ellmerlist) package. For authentication and usage of each LLM supported by `ellmer`, its original documentation is available [here](https://ellmer.tidyverse.org/).
+The `quanteda.llm` package is compatible with all LLMs supported by the `ellmer` package. For authentication and usage of each LLM supported by `ellmer`, its original documentation is available [here](https://ellmer.tidyverse.org/).
 
 ## Set-Up - Development Version
 
@@ -538,8 +536,6 @@ corpus <- corpus %>%
 
 The `quanteda.llm` R package offers exciting functions already and will offer even more after its development stage. Stay tuned.
 
-\newpage
-
 # Considerations
 
 In the sections above, we discuss different R packages that can be used to query LLMs for research. With LLMs proving to be an incredible tool for researchers, it is important to understand which method best suits the research design and resources. Following is a list of considerations a researcher must have in mind when querying LLMs via R.
@@ -571,8 +567,6 @@ In the sections above, we discuss different R packages that can be used to query
 
 - Keep your API Key protected and avoid deploying them on client-side environments.
 - Sharing API Keys could be in breach of the API's Terms of Use.
-
-\newpage
 
 # References
 
