@@ -1,10 +1,10 @@
 # Querying LLMs Via R
 
-# Introduction {-}
+# Introduction
 
 This handbook provides a step-by-step guide for researchers aiming to leverage the capabilities of Large Language Models (LLMs) via R programming. LLMs are an increasingly powerful tool for researchers in a variety of fields with the ability to assist with text-generation, data analysis, classifications, synthesising documents and much more. LLMs have made significant strides in Natural Language Processing (NLP) and are now accessible to researchers through various APIs. This document discusses the ways in which researchers can utilise LLMs, focussing mainly on OpenAI's API - ChatGPT, via different R packages. These packages include `httr` with `jsonlite`, `openai` and `chatgpt`. While most LLMs typically require interfacing with an API, it is also possible to query local LLMs using similar ways, albeit with a little more setup and computing resources at the researcher's dispense. Starting with the pre-requisites for querying LLMs, this handbook provides step-by-step instructions to utilise different R packages for research. Finally, the document discusses some considerations for researchers to keep in mind while conducting this type of research.
 
-# Pre-requisites {-}
+# Pre-requisites
 
 **1. R Installation:** Ensure you have R installed on your system. It can be downloaded from [CRAN](https://cran.r-project.org/).
 
@@ -540,7 +540,7 @@ The `quanteda.llm` R package offers exciting functions already and will offer ev
 
 \newpage
 
-# Considerations {-}
+# Considerations
 
 In the sections above, we discuss different R packages that can be used to query LLMs for research. With LLMs proving to be an incredible tool for researchers, it is important to understand which method best suits the research design and resources. Following is a list of considerations a researcher must have in mind when querying LLMs via R.
 
